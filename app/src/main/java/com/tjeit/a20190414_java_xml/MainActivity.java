@@ -30,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("확인버튼","터치 이벤트 발생 했다!");
+
+//                Ctrl + /
+//                입력에딧텍스트의 내용을 뽑아서 (get) userInputStr 변수에 저장.
+                String userInputStr = inputEditText.getText().toString();
+
+//                담겨있던 내용을 가져다가 내용 TextView의 text로 집어 넣음(set).
+                contentTxtView.setText(userInputStr);
             }
         });
 
