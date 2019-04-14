@@ -3,6 +3,7 @@ package com.tjeit.a20190414_java_xml;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,5 +26,34 @@ public class MainActivity extends AppCompatActivity {
         inputEditText = findViewById(R.id.inputEditText);
         okBtn = findViewById(R.id.okBtn);
 
+        okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("확인버튼","터치 이벤트 발생 했다!");
+            }
+        });
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
